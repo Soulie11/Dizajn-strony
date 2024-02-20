@@ -1,0 +1,118 @@
+body {
+  display: flex;
+  font-family: "Roboto";
+}
+
+main {
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+
+.bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.text > button {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.text > button:hover {
+  cursor: pointer;
+}
+
+.text > button:active {
+  background-color: gray;
+}
+
+div.search > input {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(201, 201, 201);
+  outline: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-left: 2.4rem;
+}
+
+div.search {
+  display: flex;
+  justify-content: end;
+  background-color: rgb(201, 201, 201);
+  border-radius: 15px;
+  padding-left: 10px;
+}
+
+.burger_text::before {
+  content: "> ";
+  padding-right: 10px;
+}
+
+div.text {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icon {
+  width: 2.5rem;
+  height: auto;
+}
+
+.menu_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.products > .product > img {
+  width: 16rem;
+}
+
+div.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem 5rem;
+}
+
+div.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin: 20px;
+  justify-content: flex-end;
+  border-radius: 40px;
+  box-shadow: 0.2px 0.2px 40px rgb(217, 217, 217);
+}
+
+div.product > img {
+  align-self: center;
+}
+
+div.product > div.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.products > div.product > div.details > h2.price {
+  color: rgb(255, 173, 31);
+  font-size: 2rem;
+}
