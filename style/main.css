@@ -85,7 +85,7 @@ div.products {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 1rem 5rem;
 }
 
@@ -100,6 +100,7 @@ div.product {
   justify-content: flex-end;
   border-radius: 40px;
   box-shadow: 0.2px 0.2px 40px rgb(217, 217, 217);
+  height: 23rem;
 }
 
 div.product > img {
@@ -115,4 +116,44 @@ div.product > div.details {
 div.products > div.product > div.details > h2.price {
   color: rgb(255, 173, 31);
   font-size: 2rem;
+}
+
+@media screen and (max-width: 1185px) {
+  div.products {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 1515px) {
+  div.products {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1740px) {
+  div.products {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1564px) {
+  div.products {
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  div.product {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    width: 30rem;
+  }
+  div.product {
+    width: 15rem;
+  }
+  .bar > .text > a {
+    display: none;
+  }
 }

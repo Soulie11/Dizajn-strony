@@ -107,6 +107,7 @@ div.user {
   padding: 1rem;
   gap: 6px;
   box-shadow: 0.2px 0.2px 40px rgb(217, 217, 217);
+  transition: 0.3s;
 }
 
 div.user > a {
@@ -134,4 +135,62 @@ nav > .copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 1185px) {
+  ul.list2 > li > span {
+    margin-left: 1rem;
+  }
+  div.img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  ul.list2 > li > span {
+    display: none;
+  }
+  div.user > img {
+    display: none;
+  }
+  div.user > button {
+    display: none;
+  }
+  div.user:hover {
+    background-color: gray;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    width: 10rem;
+  }
+  div.menu > ul.list1 > li > a,
+  div.menu > ul.list2 > li > a {
+    display: none;
+  }
+  div.menu > ul.list1 > li > img,
+  div.menu > ul.list2 > li > img {
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  div.menu > ul.list1,
+  div.menu > ul.list2 {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.menu > ul.list1 > li > img,
+  div.menu > ul.list2 > li > img {
+    width: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div.menu > ul.list1 > li > img,
+  div.menu > ul.list2 > li > img {
+    width: 3rem;
+  }
 }
