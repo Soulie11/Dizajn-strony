@@ -54,16 +54,16 @@ nav > .logo {
 }
 
 .menu > ul > li:hover {
-  background-color: rgb(255, 173, 31);
+  background-color: var(--orange);
   cursor: pointer;
 }
 
 .menu > ul > li:active {
-  background-color: rgb(255, 202, 110);
+  background-color: var(--orangeactive);
 }
 
 ul.list2 > li > span {
-  background-color: rgb(255, 173, 31);
+  background-color: var(--orange);
   padding: 5px 10px;
   border-radius: 50px;
   margin-left: 3rem;
@@ -82,7 +82,7 @@ div.user > img {
 }
 
 h5 {
-  color: rgb(201, 201, 201);
+  color: var(--gray);
 }
 
 h5.other {
@@ -106,7 +106,7 @@ div.user {
   text-align: center;
   padding: 1rem;
   gap: 6px;
-  box-shadow: 0.2px 0.2px 40px rgb(217, 217, 217);
+  box-shadow: var(--shadow);
   transition: 0.3s;
 }
 

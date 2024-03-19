@@ -1,3 +1,12 @@
+:root {
+  --gray: rgb(201, 201, 201);
+  --orange: rgb(255, 173, 31);
+  --orangeactive: rgb(255, 202, 110);
+  --shadow: 0.2px 0.2px 40px rgb(217, 217, 217);
+  --price: 2rem;
+  --height: 23rem;
+}
+
 body {
   display: flex;
   font-family: "Roboto";
@@ -27,7 +36,7 @@ main {
 }
 
 .text > button:active {
-  background-color: gray;
+  background-color: var(--gray);
 }
 
 div.search > input {
@@ -35,7 +44,7 @@ div.search > input {
   align-items: flex-end;
   border-radius: 15px;
   border: none;
-  background-color: rgb(201, 201, 201);
+  background-color: var(--gray);
   outline: none;
 }
 
@@ -86,7 +95,6 @@ div.products {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 1rem 5rem;
 }
 
 div.product {
@@ -99,8 +107,8 @@ div.product {
   margin: 20px;
   justify-content: flex-end;
   border-radius: 40px;
-  box-shadow: 0.2px 0.2px 40px rgb(217, 217, 217);
-  height: 23rem;
+  box-shadow: var(--shadow);
+  height: var(--height);
 }
 
 div.product > img {
@@ -115,7 +123,7 @@ div.product > div.details {
 
 div.products > div.product > div.details > h2.price {
   color: rgb(255, 173, 31);
-  font-size: 2rem;
+  font-size: var(--price);
 }
 
 @media screen and (max-width: 1185px) {
